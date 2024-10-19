@@ -23,6 +23,7 @@ header{
 }
 .logo{
     width: 100px;
+    border-radius: 70px;
 }
 .menu{
     flex: 1;
@@ -59,6 +60,9 @@ header{
     border-top: 7px solid  #B28756;
     color: #CCC;
 }
+
+/* HEADER ATÉ AQUI */
+
 .button{
     background-color: #B28756;
     color: white;
@@ -82,13 +86,14 @@ header{
 .banner .sliders{
     width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     
 }
-.banner .slide{ 
+.banner .sliders .slide{ 
     width: 100vw; /* para cada pagina do slider*/
     height: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
+   
     margin: auto;
    
 }
@@ -138,9 +143,11 @@ header{
 }
 .default{
     width: 100vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
+/* INÍCIO LIGHT ABOUT US */
 .default .section-title , 
 .default .section-desc{
     text-align: center;
@@ -148,6 +155,7 @@ header{
     font-weight: 600;
 }
 .default .section-title{
+    margin-top: 20px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -155,7 +163,7 @@ header{
     font-size: 13px;
     color: #CCC;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 .default .section-body{
@@ -193,26 +201,145 @@ header{
     line-height: 20px;  
     width: 90%;
     text-align: justify;
-    
+
 }
 .section-aboutus--right{
     flex: 1;
     text-align: center;
-
 }
 .section-aboutus--right img{
     width: 100%;
     box-shadow: 0px 5px 10px #333;
 }
 
-/* 4 DIVISÕES PRETAS */
+/* 4 DIVISÕES DARK */
 
 .section-services {
     display: flex;
-    height: 100px;
 }
 .section-service{
     flex: 1;
-    height: 100px;
+    height: 110px;
     text-align: center;
+    border-right: 1px solid white;
+    padding: 10px;
+}
+.section-service:first-child{
+    border-left: 1px solid white;
+}
+.section-service h2{
+    text-transform: uppercase;
+}
+.section-service h3{
+    font-weight: 500;
+}
+
+/*FILTROS MENUS */
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectioin-projects--filters{
+    background-color: #eee;
+    border: 1px solid #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 550px;
+}
+.sectioin-projects--filters ul{
+    
+}
+.sectioin-projects--filters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    border-left: 1px solid #CCC;
+    color: #555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+.sectioin-projects--filters li:first-child{
+    border-left: none;
+}
+
+.sectioin-projects--filters li:hover , .sectioin-projects--filters li.active{
+    border-bottom: 3px solid #B28756;
+}
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-projects--photo{
+    width: 280px;
+}
+.section-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-projects--photoarea:hover  .section-projects--photoinfo{
+    display: flex;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 2px 5px 2px black;
+}
+
+/*INÍCIO TEAM*/
+
+.default-dark-modificado{
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.section-team-area1 .section-title1 , 
+.section-team-area1 .section-desc1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-team-area1 .section-title1{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.section-team-area1 .section-desc1{
+    font-size: 13px;
+    color: #CCC;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
