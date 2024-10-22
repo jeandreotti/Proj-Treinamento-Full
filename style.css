@@ -56,9 +56,11 @@ header{
 }
 
 .menu .active a , .menu li a:hover{
+    
     border-bottom: 7px solid  #B28756;
     border-top: 7px solid  #B28756;
     color: #CCC;
+    transition: 0.3;
 }
 
 /* HEADER ATÉ AQUI */
@@ -73,7 +75,6 @@ header{
     font-weight: 600;
     margin-top: 20px;
     border-radius: 20px;
-    
 }
 .banner {
     height: calc(100vh - 100px); /* 100vh da altura intera que aparecera na tela menos 100px do header*/
@@ -87,15 +88,12 @@ header{
     width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    
 }
 .banner .sliders .slide{ 
     width: 100vw; /* para cada pagina do slider*/
     height: 100%;
     display: inline-block;
-   
     margin: auto;
-   
 }
 .slidearea{
     display: flex;
@@ -103,8 +101,7 @@ header{
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: white;
-    
+    color: white; 
 }
 .banner h1{
     text-transform: uppercase;
@@ -143,21 +140,19 @@ header{
 }
 .default{
     width: 100vw;
-    padding-top: 20px;
+    padding-top: 20px; 
     padding-bottom: 20px;
-    
 }
 /* INÍCIO LIGHT ABOUT US */
 .default .section-title , 
 .default .section-desc{
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bolder;
 }
 .default .section-title{
     margin-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
 }
 .default .section-desc{
     font-size: 13px;
@@ -192,6 +187,7 @@ header{
     justify-content: center;
     margin-left: 2%;
     margin-right: 5%;
+    margin-bottom: 20px;
 }
 .section-aboutus--left{
     flex: 1.5;
@@ -212,14 +208,14 @@ header{
     box-shadow: 0px 5px 10px #333;
 }
 
-/* 4 DIVISÕES DARK */
+/* 4 DIVISÕES DARK SERVICES*/
 
 .section-services {
     display: flex;
 }
 .section-service{
     flex: 1;
-    height: 110px;
+    height: 130px;
     text-align: center;
     border-right: 1px solid white;
     padding: 10px;
@@ -233,7 +229,6 @@ header{
 .section-service h3{
     font-weight: 500;
 }
-
 /*FILTROS MENUS *//*INÍCIO OUR PROJECTS*/
 
 .section-projects{
@@ -250,9 +245,6 @@ header{
     border-radius: 30px;
     width: 550px;
 }
-.sectioin-projects--filters ul{
-    
-}
 .sectioin-projects--filters li{
     display: inline-block;
     padding: 10px;
@@ -267,7 +259,6 @@ header{
 .sectioin-projects--filters li:first-child{
     border-left: none;
 }
-
 .sectioin-projects--filters li:hover , .sectioin-projects--filters li.active{
     border-bottom: 3px solid #B28756;
 }
@@ -278,6 +269,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  
 }
 .section-projects--photo{
     width: 280px;
@@ -286,6 +278,7 @@ header{
     margin: 10px;
     width: 260px;
     height: 160px;
+    
 }
 .section-projects--photoarea img{
     width: inherit;
@@ -311,8 +304,21 @@ header{
     cursor: pointer;
     border: 1px solid black;
     box-shadow: 0px 2px 5px 2px black;
+    transition: 0.3s;
+  
 }
-
+.button-more-projects{
+    background-color: #B28756;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
 
 /*INÍCIO OUR TEAM*/
 
@@ -429,4 +435,285 @@ header{
 }
 .section-team--social a:hover{
     background-color: #B28756;
+}
+/*HAPPY CLIENTS* fotos conteúdo*/
+.section-happyclients--name{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+.section-happyclients--role{
+    color: black;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.section-happyclients--icon{
+    margin-top: 20px;
+}
+.section-happyclients--content{
+    color: #888;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*INÍCIO HAPPY CLIENTS* POINTERS*/
+
+.sliders  .sliders-pointers{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliders  .pointer{
+    width: 18px;
+    height: 18px;
+    border:2px solid #B28756;
+    border-radius: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.sliders .pointer.active {
+    background-color: #B28756;
+}
+/*INÍCIO HAPPY CLIENTS* LOGOS*/
+
+.faixa-logos{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #CCC;
+    border-bottom: 2px solid #CCC;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos img{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 70px;
+}
+/*INÍCIO PRICES*/
+.body-prices{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.box-prices{
+    width: 100vw;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.prices{
+    margin: 10;
+    width: 190px;
+    height: 250px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    
+}
+.prices h2, .prices .price, .prices h5, .prices p, .prices hr{
+    text-align: center;
+    color:#333;
+}
+.prices h2{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.prices .price{
+    font-size: 2em;
+    color:#333;
+    font-weight: 600;
+}
+.prices h5{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color:#ccc;
+}
+.prices p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 0.8em;
+}
+.prices hr{
+    width: 15px;
+    margin: auto;
+}
+.price-content{
+    margin-bottom: 20px;
+}
+/*INÍCIO PRICES*BUTTON*/
+.prices .button-price{
+    background-color: #333;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/*INÍCIO PRICES*BUTTON*/
+.prices .button-price-active{
+    background-color: #B28756;;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/*INÍCIO PREMIUM*/
+
+.premium-sliders{
+    width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    height: 100%;
+}
+.slidearea-boxpremium{
+    width: 100vw; /* para cada pagina do slider*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.borda-fundo{
+    width: 1000px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   flex-wrap: wrap;
+   color: white; 
+   padding-bottom: 30px;
+   border-bottom: 1px solid #bbbbbb9f;
+}
+.premium-livro{
+    width: 400px;
+}
+.premium-paragrafos{
+    width: 400px;
+}
+.premium-p{
+    display: flex;
+}
+.premium-livro img{
+    width: 80%;
+}
+.premium-p .paragrafos{
+    color: #BBB;
+    display: block;
+    margin-left: 10px;
+}
+.premium-p .paragrafos h2{
+    font-size: 1.2em;
+    color: black;
+    text-transform: uppercase;
+}
+.premium-p .paragrafos p{   
+    margin-top: 5px;
+}
+.premium-p .paragrafos ul{
+    margin-top: 10px;
+}
+.premium-p .paragrafos li{   
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+ .sliders-pointers{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .pointer{
+    width: 18px;
+    height: 18px;
+    border:2px solid #B28756;
+    border-radius: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.pointer.active {
+    background-color: #B28756;
+}
+
+
+/* 4 DIVISÕES DARK SOME FACTS */
+
+.section-services {
+    display: flex;
+    padding-bottom: 50px;
+}
+.section-facts{
+    flex: 1;
+    height: 170px;
+    text-align: center;
+    padding: 10px;
+}
+.service-numero{
+    text-transform: uppercase;
+    color:#B28756;
+    font-size: 3em;
+    font-weight: 900;
+}
+.section-facts h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section-services h5{
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 200px;
+    margin: auto;
+    line-height: 2em;
+    color: #ccc;
+    position: relative;
+    bottom: 0px;
+   
+}
+.section-facts hr{
+    width: 15px;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.service-texto{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h5u{
+    position: relative;
+    bottom:16px;
 }
