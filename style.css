@@ -717,3 +717,203 @@ header{
     position: relative;
     bottom:16px;
 }
+
+/* 4 FAIXA BRANCA TELL ABOUT US */
+.faixa-tellbout{
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid #999;
+}
+.content-tellabout{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    height: inherit;
+}
+.logo-tell{
+    flex: 1;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    
+}
+.logo-tell img{
+    margin-right: 10px;
+    width: 2em;
+}
+.media-tellabout{
+    color: #999;
+    flex:3;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-tellabout a{
+    color: #EEE;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+/* BRANCA FORMULÁRIO CONTACT US */
+.contact-container{
+    max-width:450px;
+    margin:auto;
+    text-align:center;
+    margin-bottom: 40px;
+}
+.contact-container input[type=text], .contact-container textarea{
+    display:block;
+    width:100%;
+    height:40px;
+    border:0;
+    background: transparent;
+    border-bottom:2px solid #CCC;
+    outline:0;
+    margin-top:10px;
+}
+.contact-container input::placeholder, 
+.contact-container textarea::placeholder{
+    text-transform: uppercase;
+}
+.contact-line1{
+    display: flex;
+}
+.contact-line1 input:first-child{
+    margin-right: 20px;    
+}
+.contact-container textarea{
+    height: 100px;
+    resize:none;
+}
+
+/* MAPA */
+.section-map{
+    background: url('./images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100vw;
+}
+.map-areaescura{
+    width: 1000%;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.section-map .section-map--area{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: white;
+    left: 200px;
+    top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.section-map--info-item{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+
+}
+.section-map--info-item:first-child{
+    margin-top: 0px;
+}
+.section-map--info-item-img{
+    background-color: #999;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.section-map--info-item-img img{
+    width: 15px;
+    height: auto;
+}
+.section-map--info-item span{
+    font-size: 0.9em;
+    color: #999;
+    margin-left: 5px;
+}
+
+/* RODAPÉ */
+.rodape-dark{
+    background-color: black;
+    width: 100vw;
+    height: 200px;
+}
+.rodape-container{
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+}
+.rodape-3secoes{
+    display: flex;
+    height: 160px;
+}
+
+.rodape-icones-copy, .rodape-texto, .rodape-subscribe{
+    flex: 1;
+    margin: 20px;
+}
+.rodape-texto{
+    color: #CCC;
+}
+.rodape-subscribe{
+    background-color: #555;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-subscribe input[type=email]{
+    border:0;
+    background: transparent;
+    border-bottom:2px solid #CCC;
+    margin-top:10px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.rodape-subscribe input::placeholder{
+    color: #CCC;
+    font-size: 0.8em;
+    text-align: center;
+}
+.rodape-icones a{
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    background-color: #555;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    margin-right: 10px;
+}
+.rodape-icones a:hover{
+    background-color: #B28756;
+}
+.rodape-icones-copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    line-height: 1.5em;
+}
