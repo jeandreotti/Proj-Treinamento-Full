@@ -1,0 +1,450 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Montserrat', sans-serif, Arial, Helvetica, sans-serif; 
+    font-size: 13px;
+}
+
+@media (min-width:10px) and (max-width:449px){
+    nav{ display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100vw;
+        height: calc(100vh - 100px); 
+        top: 100px;
+        
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: 600;
+        font-size: 25px;
+        text-decoration: none;
+        border: none;
+        height: 50px;
+        padding: 10px;
+        padding-bottom: 0px;
+        margin-left: 20px;
+        border-bottom: 5px solid transparent;
+        border-top: none;
+    }
+    
+.menu .active a , .menu li a:hover{
+    border-bottom: 5px solid  #B28756;
+    color:#B28756;
+    transition: 0.3;
+    border-top: none;
+}
+.logoimg{
+    width: 80px;
+    height: 80px;
+    background-color: #B28756;
+    border-radius: 40px;
+}
+header.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 20px;
+    flex: 3;
+}
+.menu-hamb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.menu-hamb img{
+    width: 40px;
+    height: 30px;
+    transform: translateY(5px);
+}
+.menu-hamb span{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-hamb a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.menu-hamb a:hover{
+    text-decoration: none;
+    color: #B28756;
+    border: 2px solid #B28756;
+}
+
+/* DESIGN IS ABOUT */
+
+.banner {
+    height: calc(100vh - 100px); /* 100vh da altura intera que aparecera na tela menos 100px do header*/
+    background: rgb(116, 100, 100);
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders{
+    width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner .sliders .slide{ 
+    width: 100vw; /* para cada pagina do slider*/
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+}
+.slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.banner h1 span{
+    color: #B28756;
+    font-size: 25px;
+    
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 17px;
+}
+/* ABOUT US */
+
+.default .section-title{
+    margin-top: 0px;
+    font-size: 20px;
+}
+.default .section-desc{
+    font-size: 12px;
+    color: #CCC;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section-aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.section-aboutus--left{
+    margin-left: 0px;
+    min-width: 90%;
+    margin: auto;
+}
+.section-aboutus--left p{
+    margin: auto; 
+}
+.section-aboutus--left .button{
+    margin-left: 20px;
+}
+.section-aboutus--right{
+max-width: 90%;
+margin: auto;
+margin-top: 40px;
+}
+
+/* SERVICES */
+.default.dark{
+    padding-bottom: 10px;
+}
+.section-services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+.section-service{
+    flex:none;
+    width: 45%;
+    margin-top: 20px;
+}
+.section-service:nth-child(2) , .section-service:nth-child(4){
+    border-right: none;
+}
+.section-service:first-child{
+    border-left: none;
+}
+/* PHOTOS MENU - OUR PROJECTS */
+
+.sectioin-projects--filters{
+  width: 90%;
+  text-align: center;
+}
+.sectioin-projects--filters ul{
+    font-size: 90%;
+}
+.sectioin-projects--filters li{
+   font-size: 90%;
+   border-left: none;
+}
+.sectioin-projects--filters li:first-child{
+    border-left: none;
+}
+.sectioin-projects--filters li:hover , .sectioin-projects--filters li.active{
+    border-bottom: 3px solid #B28756;
+}
+.default.light{
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+/*INÍCIO OUR TEAM*//*SLIDERS*/
+.section-team {
+    max-width: 450px;
+}
+.section-team .sliders .slide:last-child{
+    display: none;
+    margin-right: 0;
+}
+.section-team .sliders .slide:nth-child(2){
+    display: none;
+    margin-right: 0;
+}
+.section-team .sliders{ 
+    width: 100vh;
+
+}
+.section-team .sliders .slide{ 
+    display: 0;
+       max-width: 280px;
+    width: 80%; /* para cada pagina do slider*/
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: white;
+    margin-left: 7%;
+    margin-right: 10%;
+}
+.section-team .sliders .slide .slidearea{
+    
+}
+/*INÍCIO HAPPY CLIENTS*/
+.section-happyclients--content{
+    width: 90%;
+}
+.faixa-logos{
+    height: 150px;
+}
+ .logos{
+    height: 150px;
+ flex-wrap: wrap;
+}
+.logos img{
+ width: 80px;
+}
+/*INÍCIO PREMIUM*/
+.premium-livro{
+    margin-bottom: 20px;
+}
+.borda-fundo {
+    margin-top: 20px;
+}
+
+/*INÍCIO SOME FACTS*/
+.service-texto {
+   
+}
+.somefacts-tablet .default.dark{
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+/*INÍCIO 4 FAIXA BRANCA TELL ABOUT US */
+.content-tellabout {
+    width: 80%;
+    margin-left: 20px; 
+}
+.media-tellabout a {
+    width: 35px;
+    margin-left: 5%;
+    min-width: 35px;
+    margin-right: 3px;
+}
+.logo-tell{
+    margin-right: 30px;
+    margin-left: 2%;
+}
+/*INÍCIO 4 FAIXA BRANCA TELL ABOUT US */
+.contact-adequar-tablet .default.light{
+    padding-bottom: 0px;
+}
+
+/*MAPA */
+.section-map {
+    height: 580px;
+}
+.section-map .section-map--area {
+    position: relative;
+    min-width: 400px;
+    left: 0;
+    top: 300px;
+    margin-left: 10px;
+}
+/*RODAPÉ */
+.rodape-dark{
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+}
+.rodape-container{
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    height: 100%;
+}
+.rodape-3secoes{
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rodape-icones-copy, .rodape-texto, .rodape-subscribe{
+    min-width: 240px;
+    max-width: 250px;
+    padding: 20px;
+    border: 1px solid white;
+    height: 160px;
+    margin-bottom: 0;
+}
+
+/*PRICES */
+    .body-prices{
+        margin-top: 0px;
+    }
+    .prices{
+        width: 190px;
+    }
+    .default.light {
+        background-color: #f7f7f7;
+    }
+
+/*PRICES */
+
+.borda-fundo{
+   justify-content: 0;
+   align-items: 0;
+   margin-top: 20px;
+}
+.premium-livro{
+    max-width: 350px;
+    width: 80%;
+    margin-left: 10%;
+}
+.premium-paragrafos{
+    max-width: 400px;
+    width: 80%;
+}
+
+.somefacts-tablet .default.dark{
+    padding-top: 30px;
+}
+
+/*SOME FACTS */
+.somefacts-celular  .section-services {
+    padding-bottom: 20px;
+}
+.somefacts-celular .section-facts{
+    flex: 1;
+    height: 160px;
+}
+.somefacts-celular .service-texto{
+    height: 50px;
+}
+.somefacts-celular .h5u{
+    height: 50px;
+    position: relative;
+    bottom:0px;
+    top: 5px;
+    padding-bottom: 20px;
+}
+/* 4 FAIXA BRANCA TELL ABOUT US */
+.faixa-tellbout{
+    height: 100%;
+    width: 100%;
+}
+.content-tellabout{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-tell{
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    padding: 0px;
+}
+.logo-tell img{
+    margin-right: 10px;
+    width: 2em;
+}
+.media-tellabout{
+   flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin: auto;
+
+}
+.media-tellabout a{
+    margin-left: 20px;
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* BRANCA FORMULÁRIO CONTACT US */
+.contact-adequar-tablet .default.light{
+    padding-bottom: 0px;
+}
+
+.contact-container{
+    width:80%;
+}
+/*MAPA */
+.section-map {
+    width: 100%;
+    height: 400px;
+}
+.section-map .section-map--area {
+    width: 200px;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    margin-left: 10px;
+    height: 180px;
+    transform: translateY(-50%);
+    min-width: 250px;
+    
+}
+
+
+.section-map--info-item {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 0px;
+    align-items: center;
+    min-width: 250px;
+   
+}
+.section-map--info-item spam{
+    width: 100%;
+}
+}

@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet"  href="styleTablet.css">
+        <link rel="stylesheet" href="styleMobile.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> 
         <title>AWAX</title>
     </head>
@@ -12,9 +14,12 @@
             <div class="header">
                 <div class="logo">
                     <div class="logoimg">
-                        ...
+                    
                     </div>
                 </div>
+                <div class="menu-hamb" style="display: none;">
+                    <a href=""><span>menu</span> <img src="./images/menu.png"></a>
+                 </div>
                 <div class="menu">
                     <nav>
                         <ul>
@@ -67,7 +72,7 @@
                 </div>
 <!-- --------------pointer------------------------- -->
             </section>
-<!-- -----------fim banner 1/ inicio DEFAULT LIGHT-------------------- -->
+<!-- -----------fim banner 1/ inicio DEFAULT LIGHT ABOUT US--------------->
             <section class="default light">
                 <div class="section-title">About us</div>
                 <div class="section-desc">Who we are?</div>
@@ -266,9 +271,10 @@
                     <div class="section-title1">Our team</div>
                     <div class="section-desc1">our coworker</div>
                     <div class="section-body">
-                        <div class="section-team">
-  <!-- --------------sliders------------------------- -->      
-                            <div class="sliders">   <!--style="margin-left:-100vw;" -->
+                        <div class="section-team"> 
+  <!-- --------------sliders------------------------- -->          
+                             <div class="sliders">  
+                                <!--style="margin-left:-100vw;" -->
                                 <div class="slide">
                                     <div class="slidearea">
                                         <img class="section-team--avatar" src="./media/mulher1.png">
@@ -499,54 +505,58 @@
 <!-- --------------pointer------------------------- -->        
             </section>
 <!-------------fim LIGHT PREMIUM / inicio  DARK SOME FACTS------------------>
-            <section class="default dark">
-                <div class="section-title">some facts</div>
-                <div class="section-desc">about our work</div>
-                <div class="section-body">
-                    <div class="section-services">
-                        <div class="section-facts">
-                            <div class="service-numero">
-                                1000
-                            </div>
-                            <p><hr></p>
-                            <h2>design projects<br>released</h2>
-                            <div class="service-texto h5u">
-                                <h5>Ugiat maxime officia facere ut, Ugiat maxime officia facere ut</h5>
+            <div class="somefacts-celular">
+                <div class="somefacts-tablet">
+                    <section class="default dark">
+                        <div class="section-title">some facts</div>
+                        <div class="section-desc">about our work</div>
+                        <div class="section-body">
+                            <div class="section-services">
+                                <div class="section-facts">
+                                    <div class="service-numero">
+                                        1000
+                                    </div>
+                                    <p><hr></p>
+                                    <h2>design projects<br>released</h2>
+                                    <div class="service-texto h5u">
+                                        <h5>Ugiat maxime officia facere ut, Ugiat maxime officia facere ut</h5>
+                                    </div>
+                                </div>
+                                <div class="section-facts">
+                                    <div class="service-numero">
+                                        900
+                                    </div>
+                                    <p><hr></p>
+                                    <h2>photos</h2>
+                                    <div class="service-texto">
+                                        <h5>Lorem, ipsum dolor sit amet, Ugiat maxime officia facere ut</h5>
+                                    </div>
+                                </div>
+                                <div class="section-facts">
+                                    <div class="service-numero">
+                                        500
+                                    </div>
+                                    <p><hr></p>
+                                    <h2>marketing ideas</h2>
+                                    <div class="service-texto">
+                                        <h5>Doloribus? Doloribus, quod. Ugiat maxime officia facere ut</h5>
+                                    </div>
+                                </div>
+                                <div class="section-facts">
+                                    <div class="service-numero">
+                                        100
+                                    </div>
+                                    <p><hr></p>
+                                    <h2>exibitions</h2>
+                                    <div class="service-texto">
+                                        <h5>Maxime cum quidem possimu, Ugiat maxime officia facere ut</5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="section-facts">
-                            <div class="service-numero">
-                                900
-                            </div>
-                            <p><hr></p>
-                            <h2>photos</h2>
-                            <div class="service-texto">
-                                <h5>Lorem, ipsum dolor sit amet, Ugiat maxime officia facere ut</h5>
-                            </div>
-                        </div>
-                        <div class="section-facts">
-                            <div class="service-numero">
-                                500
-                            </div>
-                            <p><hr></p>
-                            <h2>marketing ideas</h2>
-                            <div class="service-texto">
-                                <h5>Doloribus? Doloribus, quod. Ugiat maxime officia facere ut</h5>
-                            </div>
-                        </div>
-                        <div class="section-facts">
-                            <div class="service-numero">
-                                100
-                            </div>
-                            <p><hr></p>
-                            <h2>exibitions</h2>
-                            <div class="service-texto"> 
-                                <h5>Maxime cum quidem possimu, Ugiat maxime officia facere ut</5>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </div>
 <!-------------fim DARK SOME FACTS / inicio  LIGHT FAIXA TELL ABOUT ------------------>
             <section class="faixa-tellbout">
                 <div class="content-tellabout">
@@ -563,22 +573,24 @@
                 </div>
             </section>
 <!---------fim Inicio LIGHT FAIXA TELL ABOUT  / inicio LIGHT CONTACT US ----------->
-            <section class="default light">
-                <div class="section-title">contact us</div>
-                <div class="section-desc">our agency is located in melborne, australia</div>
-                <div class="contact-container"> 
-                    <form method="post">
-                        <div class=" contact-line1">
-                            <input type="text" name="name" placeholder="name">
-                            <input type="text" name="email" placeholder="email">
-                        </div>
-                        <input type="text" name="subject" placeholder="subject">
-                        <textarea name="message" placeholder="message"></textarea>
-                        <input type="submit" value="Send Message" class="button" />
-                    </form>
-                </div>
-            </section>
-<!-------------fim Inicio LIGHT CONTACT US  / inicio MAP-------------->
+            <div class="contact-adequar-tablet">
+                <section class="default light">
+                    <div class="section-title">contact us</div>
+                    <div class="section-desc">our agency is located in melborne, australia</div>
+                    <div class="contact-container">
+                        <form method="post">
+                            <div class=" contact-line1">
+                                <input type="text" name="name" placeholder="name">
+                                <input type="text" name="email" placeholder="email">
+                            </div>
+                            <input type="text" name="subject" placeholder="subject">
+                            <textarea name="message" placeholder="message"></textarea>
+                            <input type="submit" value="Send Message" class="button1" />
+                        </form>
+                    </div>
+                </section>
+            </div>
+<!-------------fim  LIGHT CONTACT US  / inicio MAP-------------->
             <section class="section-map">
                 <div class="map-areaescura">
                     <div class="section-map--area">
@@ -615,7 +627,7 @@
                     </div>
                 </div>
              </section>
-<!-------------fim Inicio LIGHT CONTACT US  / inicio MAP-------------->
+<!-------------fim  LIGHT CONTACT US  / inicio RODAPÉ   -------------->
         </main>
         <footer class="rodape-dark">
             <div class="rodape-container">
@@ -638,7 +650,7 @@
                     </div>
                     <div class="rodape-subscribe">
                         <input type="email" name="email" placeholder="email to subscribe">
-                        <input type="submit" value="subscribe" class="button"> 
+                        <input type="f" value="subscribe" class="button1"> 
                     </div>
                 </div>
             </div>
