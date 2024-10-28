@@ -238,6 +238,7 @@ margin-top: 40px;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .rodape-icones-copy, .rodape-texto, .rodape-subscribe{
     min-width: 240px;
@@ -246,6 +247,5 @@ margin-top: 40px;
     border: 1px solid white;
     height: 160px;
     margin-bottom: 0;
-
 }
 }

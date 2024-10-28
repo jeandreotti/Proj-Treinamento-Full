@@ -7,7 +7,7 @@
 }
 
 @media (min-width:10px) and (max-width:449px){
-    nav{ display: none;
+    nav{ 
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
@@ -28,7 +28,7 @@
         height: 50px;
         padding: 10px;
         padding-bottom: 0px;
-        margin-left: 20px;
+        margin-left: 40px;
         border-bottom: 5px solid transparent;
         border-top: none;
     }
@@ -193,7 +193,7 @@ margin-top: 40px;
     font-size: 90%;
 }
 .sectioin-projects--filters li{
-   font-size: 90%;
+   font-size: 95%;
    border-left: none;
 }
 .sectioin-projects--filters li:first-child{
@@ -432,17 +432,13 @@ margin-top: 40px;
     height: 180px;
     transform: translateY(-50%);
     min-width: 250px;
-    
 }
-
-
 .section-map--info-item {
     display: flex;
     margin-top: 5px;
     margin-left: 0px;
     align-items: center;
     min-width: 250px;
-   
 }
 .section-map--info-item spam{
     width: 100%;
