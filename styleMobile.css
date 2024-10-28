@@ -144,7 +144,6 @@ header.header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 0;
 }
 .section-aboutus--left{
     margin-left: 0px;
