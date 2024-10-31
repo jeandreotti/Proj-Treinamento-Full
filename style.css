@@ -6,7 +6,7 @@
     font-size: 13px;
 }
 body{
-    overflow: hidden; /* todo conteudo que passar da pagina em x sera ignorado */
+    overflow-x: hidden; /* todo conteudo que passar da pagina em x sera ignorado */
 }
 header{
     height: 100px;
@@ -100,7 +100,7 @@ header{
     overflow: hidden;
 }
 .banner .sliders{
-    width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    width: 100vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -371,7 +371,7 @@ header{
     margin: auto;
 }
 .section-team .sliders{
-    width: 1000vw;
+    width: 100vw;
     height: 100%;
 }
 .section-team .sliders .slide{ 
@@ -390,6 +390,7 @@ header{
     align-items: center;
     color: white;
     padding: 30px;
+    
     
 }
 
@@ -604,7 +605,7 @@ header{
 /*INÍCIO PREMIUM*/
 
 .premium-sliders{
-    width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    width: 100vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
 }
 .slidearea-boxpremium{
@@ -615,7 +616,7 @@ header{
    
 }
 .borda-fundo{
-    width: 1000px;
+    width: 100vw;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -819,7 +820,7 @@ header{
     width: 100vw;
 }
 .map-areaescura{
-    width: 1000%;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    width: 100%;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
@@ -873,7 +874,7 @@ header{
     height: 200px;
 }
 .rodape-container{
-    width: 1000px;
+    width: 100vw;
     height: 200px;
     margin: auto;
 }

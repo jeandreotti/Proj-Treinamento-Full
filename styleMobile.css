@@ -94,7 +94,7 @@ header.header{
     overflow: hidden;
 }
 .banner .sliders{
-    width: 1000vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
+    width: 100vw;/* para as 3 paginas de sliders. Sera passada comente com JV*/
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -303,7 +303,7 @@ margin-top: 40px;
     height: 100%;
 }
 .rodape-container{
-    width: 1000px;
+    width: 100vw;
     height: 200px;
     margin: auto;
     height: 100%;
@@ -449,7 +449,7 @@ margin-top: 40px;
     height: 100%;
 }
 .rodape-container{
-    width: 1000px;
+    width: 100vw;
     height: 200px;
     margin: auto;
     height: 100%;

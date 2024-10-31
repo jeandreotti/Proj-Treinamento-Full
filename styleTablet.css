@@ -6,7 +6,7 @@
     font-size: 13px;
 }
 
-@media (min-width:450px) and (max-width:800px){
+@media (min-width:450px) and (max-width:850px){
     nav{
         position: absolute;
         z-index: 99;
@@ -155,7 +155,6 @@ margin-top: 40px;
 .section-team .sliders .slide{ 
     display: flex;
     max-width: 280px;
-    width: 4.5%; /* para cada pagina do slider*/
     height: 100%;
     min-height: 300px;
     display: inline-block;
@@ -184,8 +183,10 @@ margin-top: 40px;
 }
 
 /*INÍCIO SOME FACTS*/
-.service-texto {
-   
+.section-services {
+    display: flex;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .somefacts-tablet .default.dark{
     padding-bottom: 0;
@@ -229,7 +230,7 @@ margin-top: 40px;
     height: 100%;
 }
 .rodape-container{
-    width: 1000px;
+    width: 100vw;
     height: 200px;
     margin: auto;
     height: 100%;
